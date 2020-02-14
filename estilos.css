@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/article_teaser.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+body > h1{
+    background-color: rgba(51, 156, 112, 0.418);
+    margin: 10px;
+}
+input{
+    height: 24px;
+    border: 1px solid rgb(129, 131, 134);
+    border-radius: 5px;
+}
+input[type=submit],
+input[type=button],
+input[type=file]{
+    background-color: rgb(25, 212, 50);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 32px;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=file]:hover{
+    color:  rgb(56, 218, 78);
+    background-color: #FFF;
+}
+input[type=text]:invalid,
+input[type=date]:invalid,
+input[type=file]:invalid,
+input[type=url]:invalid,
+input[type=tel]:invalid{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+input[type=text]:valid, /*Estilo para los input de tipo file, text y date*/
+input[type=date]:valid, /*Cuando su contenido sea valido*/
+input[type=file]:valid,
+input[type=url]:valid,
+input[type=tel]:valid{
+    background-color: rgb(134, 250, 173);
+    color: black;
+}
